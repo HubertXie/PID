@@ -64,10 +64,9 @@ void loop()
 }
 void main()
 {
-setup();
-while(true)
-{
-  loop();
-}
-
+  setup();
+  while (true)
+  {
+    loop();
+  }
 }

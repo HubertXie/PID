@@ -14,7 +14,7 @@ double Setpoint, Input, Output;
 
 //Specify the links and initial tuning parameters
 // 指定链接和初始调优参数
-double Kp=2, Ki=5, Kd=1;
+double Kp = 2, Ki = 5, Kd = 1;
 PID myPID(&Input, &Output, &Setpoint, Kp, Ki, Kd, DIRECT);
 
 void setup()
@@ -38,10 +38,9 @@ void loop()
 
 void main()
 {
-setup();
-while(true)
-{
-  loop();
-}
-
+  setup();
+  while (true)
+  {
+    loop();
+  }
 }
