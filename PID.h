@@ -129,12 +129,14 @@ void PID_SetSampleTime(PID *pidp, int);
 /* 显示相关功能 **************************************************************** */
 /* 这些函数用于查询pid的私有变量 */
 /* 它们主要是为了pid前端而创建的，前端需要获取pid的私有变量 */
+#if 0
 double GetKp(PID *pidp);
 double GetKi(PID *pidp);
 double GetKd(PID *pidp);
 int GetMode(PID *pidp);
 int GetDirection(PID *pidp);
 void Initialize(PID *pidp);
+#endif
 /*===========================================================================*/
 /* 模块内联函数.                                                              */
 /*===========================================================================*/
